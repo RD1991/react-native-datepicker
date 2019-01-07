@@ -1,31 +1,38 @@
-import {StyleSheet} from 'react-native';
+import {
+  StyleSheet,
+  Dimensions
+} from 'react-native';
+const component_width = Dimensions.get('window').width - 60;
+const CONSTANT = require('../../constant');
 
 let style = StyleSheet.create({
   dateTouch: {
-    width: 142
+    marginTop: 10,
+    width: component_width
   },
   dateTouchBody: {
     flexDirection: 'row',
-    height: 40,
+    height: 30,
     alignItems: 'center',
+    borderWidth: 1,
+    borderRadius: 5, 
+    borderColor: 'gray',
     justifyContent: 'center'
   },
   dateIcon: {
-    width: 32,
-    height: 32,
+    width: 15,
+    height: 15,
     marginLeft: 5,
     marginRight: 5
   },
   dateInput: {
     flex: 1,
-    height: 40,
-    borderWidth: 1,
-    borderColor: '#aaa',
-    alignItems: 'center',
+    height: 30,
     justifyContent: 'center'
   },
   dateText: {
-    color: '#333'
+    color: 'black',
+    fontSize: CONSTANT.TEXTINPUT_FONT
   },
   placeholderText: {
     color: '#c9c9c9'
@@ -51,11 +58,12 @@ let style = StyleSheet.create({
     justifyContent: 'center'
   },
   btnTextText: {
-    fontSize: 16,
-    color: '#46cf98'
+    color: 'black',
+    fontSize: CONSTANT.TEXTINPUT_FONT
   },
   btnTextCancel: {
-    color: '#666'
+    color: 'black',
+    fontSize: CONSTANT.TEXTINPUT_FONT
   },
   btnCancel: {
     left: 0
