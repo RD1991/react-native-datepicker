@@ -7,16 +7,12 @@ const CONSTANT = require('../../constant');
 
 let style = StyleSheet.create({
   dateTouch: {
-    marginTop: 10,
-    width: component_width
+    
   },
   dateTouchBody: {
     flexDirection: 'row',
     height: 30,
     alignItems: 'center',
-    borderWidth: 1,
-    borderRadius: 5, 
-    borderColor: 'gray',
     justifyContent: 'center'
   },
   dateIcon: {
